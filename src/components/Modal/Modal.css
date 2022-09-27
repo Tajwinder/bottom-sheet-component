@@ -1,0 +1,73 @@
+.wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(236, 235, 235, 0.7);
+  color: red;
+  display: flex;
+  justify-content: center;
+  animation-duration: 1000ms;
+}
+#wrapper-show {
+  animation-name: wrapper-show-animation;
+}
+
+#wrapper-hide {
+  animation-name: wrapper-hide-animation;
+}
+
+.modal {
+  width: 500px;
+  min-height: 400px;
+  background-color: white;
+  color: black;
+  position: absolute;
+  bottom: 0;
+  animation-duration: 1000ms;
+}
+
+#modal-show {
+  animation-name: modal-show-animation;
+}
+
+#modal-hide {
+  animation-name: modal-hide-animation;
+}
+
+@keyframes modal-show-animation {
+  from {
+    bottom: -400px;
+  }
+  to {
+    bottom: 0;
+  }
+}
+
+@keyframes modal-hide-animation {
+  from {
+    bottom: 0;
+  }
+  to {
+    bottom: -400px;
+  }
+}
+
+@keyframes wrapper-show-animation {
+  from {
+    background-color: white;
+  }
+  to {
+    background-color: rgba(236, 235, 235, 0.7);
+  }
+}
+
+@keyframes wrapper-hide-animation {
+  from {
+    background-color: rgba(236, 235, 235, 0.7);
+  }
+  to {
+    background-color: white;
+  }
+}
